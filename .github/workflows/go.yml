@@ -21,6 +21,15 @@ jobs:
         with:
           fetch-depth: 0
       -
+        name: Set env
+        uses: actions/checkout@v4
+        run: echo "LATEST_VERSION=${{ github.ref_name }}" >> $GITHUB_ENV
+      -  
+        name: Test
+        uses: actions/checkout@v4
+        run: echo $GITHUB_SHA_SHORT
+       
+      -
         name: Set up Go
         uses: actions/setup-go@v4
         with:
@@ -34,4 +43,3 @@ jobs:
           args: release --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LATEST_VERSION: ${{ github.ref_name }}
