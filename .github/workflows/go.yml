@@ -21,9 +21,6 @@ jobs:
         with:
           fetch-depth: 0
       -
-        name: Set env
-        run: echo "${{ github.ref_name }}" >> .version
-      -
         name: Set up Go
         uses: actions/setup-go@v4
         with:

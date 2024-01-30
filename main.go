@@ -2,20 +2,13 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"os"
 
-	"github.com/joho/godotenv"
+	version "github.com/ynhummel/github-env-test/internal"
 )
 
 func main() {
 
-	err := godotenv.Load(".version")
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
-
-	version := os.Getenv("LATEST_VERSION")
+	version := version.Version
 	if version == "" {
 		version = "versionNotFound"
 	}
