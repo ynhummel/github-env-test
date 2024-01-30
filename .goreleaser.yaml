@@ -15,7 +15,7 @@ builds:
   - env:
       - CGO_ENABLED=0
     ldflags:
-      - -X "github.com/ynhummel/github-env-test/internal/version.Version={{ .Tag }}"
+      - -X "github.com/ynhummel/github-env-test/internal.Version={{ .Tag }}"
     goos:
       - linux
       - windows
