@@ -22,10 +22,7 @@ jobs:
           fetch-depth: 0
       -
         name: Set env
-        run: echo "LATEST_VERSION=${{ github.ref_name }}" >> $GITHUB_ENV
-      -  
-        name: Test
-        run: echo $LATEST_VERSION
+        run: echo "${{ github.ref_name }}" >> .version
       -
         name: Set up Go
         uses: actions/setup-go@v4
