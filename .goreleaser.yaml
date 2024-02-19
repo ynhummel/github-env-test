@@ -55,6 +55,6 @@ changelog:
 brews:
   - name: version
     homepage: "https://github.com/ynhummel/homebrew-tools"
-    tap:
+    repository:
       owner: ynhummel
       name: homebrew-tools
