@@ -51,3 +51,10 @@ changelog:
     exclude:
       - "^docs:"
       - "^test:"
+
+brews:
+  - name: version
+    homepage: "https://github.com/ynhummel/homebrew-tools"
+    tap:
+      owner: ynhummel
+      name: homebrew-tools
