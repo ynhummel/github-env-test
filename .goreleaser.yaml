@@ -51,6 +51,8 @@ changelog:
     exclude:
       - "^docs:"
       - "^test:"
+announce:
+  skip: true
 
 brews:
   - name: github-env-test
