@@ -53,7 +53,7 @@ changelog:
       - "^test:"
 
 brews:
-  - name: version
+  - name: github-env-test
     homepage: "https://github.com/ynhummel/homebrew-tools"
     repository:
       owner: ynhummel
